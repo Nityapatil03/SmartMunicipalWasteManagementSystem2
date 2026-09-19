@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SplashFragment">
+
+    <!-- Screen 1: Splash -->
+    <fragment
+        android:id="@+id/SplashFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.SplashFragment"
+        android:label="Splash Screen"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splash_to_login"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+
+    <!-- Screen 2: Login -->
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_citizenDashboard"
+            app:destination="@id/CitizenDashboardFragment" />
+        <action
+            android:id="@+id/action_login_to_adminDashboard"
+            app:destination="@id/AdminHotspotDashboardFragment" />
+        <action
+            android:id="@+id/action_login_to_workerTaskList"
+            app:destination="@id/WorkerTaskListFragment" />
+        <action
+            android:id="@+id/action_login_to_signUp"
+            app:destination="@id/SignUpFragment" />
+        <action
+            android:id="@+id/action_login_to_forgotPassword"
+            app:destination="@id/ForgotPasswordFragment" />
+    </fragment>
+
+    <!-- Screen 3: Sign Up -->
+    <fragment
+        android:id="@+id/SignUpFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.SignUpFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_signup">
+        <action
+            android:id="@+id/action_signUp_to_citizenDashboard"
+            app:destination="@id/CitizenDashboardFragment" />
+        <action
+            android:id="@+id/action_signUp_to_login"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+
+    <!-- Screen 4: Forgot Password -->
+    <fragment
+        android:id="@+id/ForgotPasswordFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.ForgotPasswordFragment"
+        android:label="Forgot Password"
+        tools:layout="@layout/fragment_forgot_password">
+        <action
+            android:id="@+id/action_forgotPassword_to_login"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+
+    <!-- Screen 5: Citizen Dashboard -->
+    <fragment
+        android:id="@+id/CitizenDashboardFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.CitizenDashboardFragment"
+        android:label="Citizen Dashboard"
+        tools:layout="@layout/fragment_citizen_dashboard" />
+
+    <!-- Screen 6: Live Vehicle Tracking -->
+    <fragment
+        android:id="@+id/LiveVehicleTrackingFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.LiveVehicleTrackingFragment"
+        android:label="Live Vehicle Tracking"
+        tools:layout="@layout/fragment_live_vehicle_tracking" />
+
+    <!-- Screen 7: My Complaints -->
+    <fragment
+        android:id="@+id/MyComplaintsFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.MyComplaintsFragment"
+        android:label="My Complaints"
+        tools:layout="@layout/fragment_my_complaints" />
+
+    <!-- Screen 8: Citizen Profile & Rewards -->
+    <fragment
+        android:id="@+id/CitizenProfileRewardsFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.CitizenProfileRewardsFragment"
+        android:label="Profile &amp; Rewards"
+        tools:layout="@layout/fragment_citizen_profile_rewards" />
+
+    <!-- Screen 9: Complaint Detail & SLA -->
+    <fragment
+        android:id="@+id/ComplaintDetailSlaFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.ComplaintDetailSlaFragment"
+        android:label="Complaint SLA Detail"
+        tools:layout="@layout/fragment_complaint_detail_sla" />
+
+    <!-- Screen 10: Report Issue -->
+    <fragment
+        android:id="@+id/ReportIssueFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.ReportIssueFragment"
+        android:label="Report Issue"
+        tools:layout="@layout/fragment_report_issue" />
+
+    <!-- Screen 11: Admin Hotspot Dashboard -->
+    <fragment
+        android:id="@+id/AdminHotspotDashboardFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.AdminHotspotDashboardFragment"
+        android:label="Admin Hotspot Dashboard"
+        tools:layout="@layout/fragment_admin_hotspot_dashboard" />
+
+    <!-- Screen 12: Admin Complaint Management -->
+    <fragment
+        android:id="@+id/AdminComplaintManagementFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.AdminComplaintManagementFragment"
+        android:label="Complaint Management"
+        tools:layout="@layout/fragment_admin_complaint_management" />
+
+    <!-- Screen 13: Worker Dispatch -->
+    <fragment
+        android:id="@+id/WorkerDispatchFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.WorkerDispatchFragment"
+        android:label="Worker Dispatch Map"
+        tools:layout="@layout/fragment_worker_dispatch" />
+
+    <!-- Screen 14: Worker Task List -->
+    <fragment
+        android:id="@+id/WorkerTaskListFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.WorkerTaskListFragment"
+        android:label="Worker Task List"
+        tools:layout="@layout/fragment_worker_task_list" />
+
+    <!-- Screen 15: Proof of Work Verification -->
+    <fragment
+        android:id="@+id/ProofOfWorkVerificationFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.ProofOfWorkVerificationFragment"
+        android:label="Proof of Work Verification"
+        tools:layout="@layout/fragment_proof_of_work" />
+
+    <!-- Showcase Grid View -->
+    <fragment
+        android:id="@+id/GridShowcaseFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.GridShowcaseFragment"
+        android:label="23-Screen Design Showcase"
+        tools:layout="@layout/fragment_grid_showcase" />
+
+    <!-- Legacy Template Fragments -->
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.FirstFragment"
+        android:label="First Fragment"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.smartmunicipalwastemanagementsystem.SecondFragment"
+        android:label="Second Fragment"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <!-- Global Navigation Actions -->
+    <action
+        android:id="@+id/action_global_reportIssueFragment"
+        app:destination="@id/ReportIssueFragment" />
+    <action
+        android:id="@+id/action_global_liveVehicleTrackingFragment"
+        app:destination="@id/LiveVehicleTrackingFragment" />
+    <action
+        android:id="@+id/action_global_adminDashboard"
+        app:destination="@id/AdminHotspotDashboardFragment" />
+    <action
+        android:id="@+id/action_global_adminComplaintManagement"
+        app:destination="@id/AdminComplaintManagementFragment" />
+    <action
+        android:id="@+id/action_global_workerDispatch"
+        app:destination="@id/WorkerDispatchFragment" />
+    <action
+        android:id="@+id/action_global_proofOfWorkVerification"
+        app:destination="@id/ProofOfWorkVerificationFragment" />
+    <action
+        android:id="@+id/action_global_citizenDashboard"
+        app:destination="@id/CitizenDashboardFragment" />
+    <action
+        android:id="@+id/action_global_login"
+        app:destination="@id/LoginFragment" />
+</navigation>

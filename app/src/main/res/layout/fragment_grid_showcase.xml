@@ -1,0 +1,2972 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_studio_neutral"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Showcase Branding Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smart Municipal Waste Management System"
+            android:textColor="@color/deep_forest_green"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Behance &amp; Dribbble UI Showcase • Enterprise Civic Tech Mobile Design System (23 Screens • 4 Rows)"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <!-- Palette Chips Row -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/deep_forest_green"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:text="Emerald #1E5631"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:background="@color/emerald_primary"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:text="Forest #2E7D32"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:background="@color/white"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:text="Clean White"
+                android:textColor="@color/text_primary"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:background="@color/bg_slate_gray"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:text="Neutral Grey"
+                android:textColor="@color/text_secondary"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- ================================================================================= -->
+        <!-- ROW 1: ONBOARDING & CITIZEN PORTAL (SCREENS 1 - 5) -->
+        <!-- ================================================================================= -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="ROW 1: ONBOARDING &amp; CITIZEN PORTAL"
+            android:textColor="@color/deep_forest_green"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 1. Splash Screen -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_1"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:background="@drawable/bg_notch" />
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="24dp"
+                            android:src="@drawable/ic_recycle_logo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="Smart Municipal Waste Management System"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Cleaner Today Greener Tomorrow"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="10sp" />
+
+                        <!-- Vector illustration of sanitation workers with green trucks and bins -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="16dp"
+                            app:cardBackgroundColor="@color/emerald_light">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/ic_truck_gps" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:gravity="center"
+                                    android:text="Sanitation Workers &amp; Green Collection Fleet Illustration"
+                                    android:textColor="@color/deep_forest_green"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/Widget.App.Button.Pill"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:layout_marginTop="24dp"
+                            android:text="GET STARTED"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 2. Citizen Login Screen -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_2"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Citizen Login"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/ic_recycle_logo" />
+
+                        <!-- Email field -->
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/bg_input_field"
+                            android:hint="Email Address"
+                            android:paddingHorizontal="8dp"
+                            android:textSize="10sp" />
+
+                        <!-- Password field with visibility toggle -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/bg_input_field"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="8dp">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:textSize="10sp" />
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:src="@drawable/ic_padlock" />
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/Widget.App.Button.Pill"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_marginTop="12dp"
+                            android:text="Login"
+                            android:textSize="10sp" />
+
+                        <!-- OR divider -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1"
+                                android:background="@color/divider_stroke" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="6dp"
+                                android:text="OR"
+                                android:textColor="@color/text_muted"
+                                android:textSize="9sp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="1"
+                                android:background="@color/divider_stroke" />
+                        </LinearLayout>
+
+                        <!-- Social buttons -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_input_field"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:src="@drawable/ic_google_logo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:text="Continue with Google"
+                                android:textColor="@color/text_primary"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/bg_input_field"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:src="@drawable/ic_apple_logo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:text="Continue with Apple ID"
+                                android:textColor="@color/text_primary"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 3. Citizen Registration Screen -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_3"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Citizen Registration"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_input_field"
+                            android:hint="Full Name"
+                            android:paddingHorizontal="8dp"
+                            android:textSize="9sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/bg_input_field"
+                            android:hint="Address"
+                            android:paddingHorizontal="8dp"
+                            android:textSize="9sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/bg_input_field"
+                            android:hint="Pincode"
+                            android:paddingHorizontal="8dp"
+                            android:textSize="9sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/bg_input_field"
+                            android:hint="Phone"
+                            android:paddingHorizontal="8dp"
+                            android:textSize="9sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/bg_input_field"
+                            android:hint="Create Password"
+                            android:inputType="textPassword"
+                            android:paddingHorizontal="8dp"
+                            android:textSize="9sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dry/Wet waste sorting commitment"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/Widget.App.Button.Pill"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_marginTop="12dp"
+                            android:text="Register"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 4. Citizen Main User Dashboard -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_4"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Citizen Main User Dashboard"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <!-- Quick Chips -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="2dp"
+                                android:layout_weight="1"
+                                android:background="@color/emerald_light"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:text="Complaints: 12"
+                                android:textColor="@color/deep_forest_green"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="2dp"
+                                android:layout_weight="1"
+                                android:background="@color/emerald_light"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:text="Bins: 88"
+                                android:textColor="@color/deep_forest_green"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/emerald_light"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:text="Vehicles: 12"
+                                android:textColor="@color/deep_forest_green"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <!-- Nearby Smart Bins Map Section -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Nearby Smart Bins"
+                            android:textColor="@color/text_primary"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_marginTop="4dp"
+                            app:cardBackgroundColor="#EAF4EA">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center"
+                                    android:text="🗺️ [ Interactive Collection Map ]\nSmart Bins &amp; Truck Routes"
+                                    android:textColor="@color/deep_forest_green"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- Quick Actions Grid -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Quick Actions"
+                            android:textColor="@color/text_primary"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:src="@drawable/ic_camera_geotag" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:text="Complaints"
+                                    android:textColor="@color/text_primary"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:src="@drawable/ic_verified_badge" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:text="Complete"
+                                    android:textColor="@color/text_primary"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- Bottom nav bar simulation -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="🏠 Home"
+                                android:textColor="@color/deep_forest_green"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="🗑️ Bins"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="👤 Profile"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 5. Smart Bin Locator -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_5"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Smart Bin Locator"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <!-- City Map Simulation -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_marginTop="8dp"
+                            app:cardBackgroundColor="#E0EFE0">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center"
+                                    android:text="🗺️ City Streets Map\n🟢 Bin #2312: Available\n🔴 Bin #3512: Red Full"
+                                    android:textColor="@color/deep_forest_green"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- Bottom Card -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Nearby Smart Time"
+                                    android:textColor="@color/text_primary"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Status: Available / Red Full"
+                                    android:textColor="@color/status_completed"
+                                    android:textSize="9sp" />
+
+                                <com.google.android.material.button.MaterialButton
+                                    style="@style/Widget.App.Button.Pill"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="36dp"
+                                    android:layout_marginTop="6dp"
+                                    android:text="Route to Bin"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- ================================================================================= -->
+        <!-- ROW 2: REPORTING, TRACKING & CIVIC EDUCATION (SCREENS 6 - 11) -->
+        <!-- ================================================================================= -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="ROW 2: REPORTING, TRACKING &amp; CIVIC EDUCATION"
+            android:textColor="@color/deep_forest_green"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 6. New Complaint Screen -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_6"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="New Complaint"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <!-- Dropdown Select Waste Type -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Select Waste Type"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@drawable/bg_input_field"
+                            android:gravity="center_vertical"
+                            android:paddingHorizontal="8dp"
+                            android:text="Garbage"
+                            android:textColor="@color/text_primary"
+                            android:textSize="10sp" />
+
+                        <!-- Description required -->
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/bg_input_field"
+                            android:hint="Description (required)"
+                            android:paddingHorizontal="8dp"
+                            android:textSize="9sp" />
+
+                        <!-- Large camera card -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            app:cardBackgroundColor="@color/emerald_light">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:src="@drawable/ic_camera_geotag" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="Tap to capture Photo"
+                                    android:textColor="@color/deep_forest_green"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="34dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Upload Gallery Image"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="📍 Automated GPS location"
+                            android:textColor="@color/status_completed"
+                            android:textSize="9sp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/Widget.App.Button.Pill"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Submit Complaint"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 7. My Complaints Screen -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_7"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="My Complaints"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <!-- Segmented control tabs -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@color/divider_stroke"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/deep_forest_green"
+                                android:gravity="center"
+                                android:text="All"
+                                android:textColor="@color/white"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Pending"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="In Prog"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Done"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <!-- Card 1 -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="6dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Garbage Overflow"
+                                        android:textColor="@color/text_primary"
+                                        android:textSize="9sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/bg_status_pending"
+                                        android:paddingHorizontal="4dp"
+                                        android:paddingVertical="1dp"
+                                        android:text="Pending"
+                                        android:textColor="@color/status_pending"
+                                        android:textSize="8sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Near City Vadodara, 12 Aug | 10:35 AM"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- Card 2 -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="6dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Plastic Waste"
+                                        android:textColor="@color/text_primary"
+                                        android:textSize="9sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/bg_status_in_progress"
+                                        android:paddingHorizontal="4dp"
+                                        android:paddingVertical="1dp"
+                                        android:text="In Progress"
+                                        android:textColor="@color/status_in_progress"
+                                        android:textSize="8sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Manjalpur Area, 10 Aug | 02:15 AM"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- Card 3 -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="6dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="E-Waste"
+                                        android:textColor="@color/text_primary"
+                                        android:textSize="9sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/bg_status_completed"
+                                        android:paddingHorizontal="4dp"
+                                        android:paddingVertical="1dp"
+                                        android:text="Completed"
+                                        android:textColor="@color/status_completed"
+                                        android:textSize="8sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="10 Aug | 11:20 AM"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- Card 4 -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="6dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Construction Waste"
+                                        android:textColor="@color/text_primary"
+                                        android:textSize="9sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/bg_status_escalated"
+                                        android:paddingHorizontal="4dp"
+                                        android:paddingVertical="1dp"
+                                        android:text="Rejected"
+                                        android:textColor="@color/status_escalated"
+                                        android:textSize="8sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 8. Citizen Profile & Rewards Screen -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_8"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Citizen Profile"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <!-- Profile Header -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:cardBackgroundColor="@color/deep_forest_green">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:src="@drawable/ic_recycle_logo"
+                                    app:tint="@color/white" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Alex Morgan"
+                                        android:textColor="@color/white"
+                                        android:textSize="11sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Ward 14 • Vadodara"
+                                        android:textColor="#E0E0E0"
+                                        android:textSize="9sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- Quick Links -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="32dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:text="⚙️ Settings"
+                                android:textColor="@color/text_primary"
+                                android:textSize="9sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="32dp"
+                                android:layout_marginStart="4dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:text="📜 History"
+                                android:textColor="@color/text_primary"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <!-- Gamified rewards banner -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            app:cardBackgroundColor="@color/emerald_light">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gamified rewards"
+                                    android:textColor="@color/deep_forest_green"
+                                    android:textSize="11sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="480 Eco-Points Earned"
+                                    android:textColor="@color/deep_forest_green"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:text="Waste-Sorting Badges:\n🏅 Zero Waste Hero  🌱 Sorting Champ"
+                                    android:textColor="@color/deep_forest_green"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 9. Tracking & Vehicle Location -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_9"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Tracking &amp; Vehicle Location"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <!-- GPS Map Trail -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_marginTop="8dp"
+                            app:cardBackgroundColor="#E0EFE0">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center"
+                                    android:text="🚛 Live Garbage Truck GPS Trail\nCollection Route Waypoints\n🟢 Waypoint 1 → 🟡 Waypoint 2"
+                                    android:textColor="@color/deep_forest_green"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- Info Card -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Expected Pickup Time: ETA - 15 min"
+                                    android:textColor="@color/deep_forest_green"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Truck #402 • Ward 14 Collection"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="9sp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 10. Waste Segregation Guide -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_10"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Waste Segregation Guide"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <!-- Dry Waste Card -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:background="@color/status_in_progress_bg"
+                                    android:gravity="center"
+                                    android:text="🔵"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="6dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Dry Waste"
+                                        android:textColor="@color/status_in_progress"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Paper, Plastic, Metal, Glass"
+                                        android:textColor="@color/text_secondary"
+                                        android:textSize="8sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- Wet Waste Card -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:background="@color/emerald_light"
+                                    android:gravity="center"
+                                    android:text="🟢"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="6dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Wet Waste"
+                                        android:textColor="@color/deep_forest_green"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Food Scraps, Organic, Compost"
+                                        android:textColor="@color/text_secondary"
+                                        android:textSize="8sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- Hazardous Waste Card -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:background="@color/status_escalated_bg"
+                                    android:gravity="center"
+                                    android:text="🔴"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="6dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Hazardous Waste"
+                                        android:textColor="@color/status_escalated"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Batteries, E-Waste, Chemicals"
+                                        android:textColor="@color/text_secondary"
+                                        android:textSize="8sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/Widget.App.Button.Pill"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Route to Bin"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 11. Community Collection Points -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_11"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Community Collection Points"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <!-- Search Bar -->
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/bg_input_field"
+                            android:hint="Local waste drop-off centers"
+                            android:paddingHorizontal="8dp"
+                            android:textSize="9sp" />
+
+                        <!-- Filter Tabs -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="22dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@color/divider_stroke"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/deep_forest_green"
+                                android:gravity="center"
+                                android:text="All"
+                                android:textColor="@color/white"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Pending"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="In Prog"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Done"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <!-- Card 1 -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="6dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Green Park Drop-Off Hub"
+                                    android:textColor="@color/text_primary"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Distance: 0.4 km • Capacity: 40% Full"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- Card 2 -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="6dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Manjalpur Recycling Hub"
+                                    android:textColor="@color/text_primary"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Distance: 1.2 km • Capacity: 85% Full"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- ================================================================================= -->
+        <!-- ROW 3: MUNICIPAL CORPORATION ADMIN PANEL (SCREENS 12 - 17) -->
+        <!-- ================================================================================= -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="ROW 3: MUNICIPAL CORPORATION ADMIN PANEL"
+            android:textColor="@color/deep_forest_green"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 12. Admin Dashboard -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_12"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Admin Dashboard"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Garbage Complaints: 780 imp • Real-Time: 33"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="8sp" />
+
+                        <!-- Heatmap Simulation -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_marginTop="6dp"
+                            app:cardBackgroundColor="#E0EFE0">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center"
+                                    android:text="🔥 Red/Yellow/Green City Heatmap\nGarbage Hotspot Concentrations"
+                                    android:textColor="@color/heatmap_red"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- KPI Grid -->
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:columnCount="2"
+                            android:rowCount="2">
+
+                            <TextView
+                                android:layout_margin="2dp"
+                                android:background="@color/white"
+                                android:padding="4dp"
+                                android:text="Total Complaints: 156"
+                                android:textColor="@color/text_primary"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_margin="2dp"
+                                android:background="@color/white"
+                                android:padding="4dp"
+                                android:text="Total Bins: 88"
+                                android:textColor="@color/text_primary"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_margin="2dp"
+                                android:background="@color/white"
+                                android:padding="4dp"
+                                android:text="Vehicles Active: 12"
+                                android:textColor="@color/text_primary"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_margin="2dp"
+                                android:background="@color/white"
+                                android:padding="4dp"
+                                android:text="Active Complaints: 72"
+                                android:textColor="@color/text_primary"
+                                android:textSize="8sp" />
+                        </GridLayout>
+
+                        <!-- Daily collection weight chart -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@color/emerald_light"
+                            android:gravity="center"
+                            android:text="📊 Daily Collection Weight Chart (Tons)"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 13. Admin Complaint Management -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_13"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Admin Complaint Management"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <!-- Bulk Action Controls -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.App.Button.Pill"
+                                android:layout_width="0dp"
+                                android:layout_height="32dp"
+                                android:layout_marginEnd="2dp"
+                                android:layout_weight="1"
+                                android:text="Multi-Select"
+                                android:textSize="8sp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.Material3.Button.OutlinedButton"
+                                android:layout_width="0dp"
+                                android:layout_height="32dp"
+                                android:layout_marginStart="2dp"
+                                android:layout_weight="1"
+                                android:text="Bulk Assignment"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <!-- Table List -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:padding="6dp"
+                                android:text="• #CMP-101 Garbage Overflow\n   Tag: Supervisor Ward 14"
+                                android:textColor="@color/text_primary"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/white"
+                                android:padding="6dp"
+                                android:text="• #CMP-102 Chemical Spill\n   Tag: Supervisor Ward 2"
+                                android:textColor="@color/text_primary"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/white"
+                                android:padding="6dp"
+                                android:text="• #CMP-103 Plastic Waste Dump\n   Tag: Supervisor Ward 8"
+                                android:textColor="@color/text_primary"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 14. Bin Monitoring Screen -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_14"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Bin Monitoring Screen"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Real-time IoT ultrasonic sensor feed"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="8sp" />
+
+                        <!-- Bin 2312 -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bin #2312 • Market Road"
+                                    android:textColor="@color/text_primary"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="95% full - Critical Alert"
+                                    android:textColor="@color/status_escalated"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold" />
+
+                                <ProgressBar
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="12dp"
+                                    android:layout_marginTop="4dp"
+                                    android:progress="95" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- Bin 3512 -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bin #3512 • Green Park"
+                                    android:textColor="@color/text_primary"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="45% full - Normal"
+                                    android:textColor="@color/status_completed"
+                                    android:textSize="9sp" />
+
+                                <ProgressBar
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="12dp"
+                                    android:layout_marginTop="4dp"
+                                    android:progress="45" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 15. Fleet Management Screen -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_15"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Fleet Management Screen"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Table list of collection trucks"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="8sp" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="6dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Truck #402 • Driver: Ramesh P."
+                                    android:textColor="@color/text_primary"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Battery/Fuel: 82% • Charging Active"
+                                    android:textColor="@color/status_completed"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="6dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Truck #108 • Driver: Suresh S."
+                                    android:textColor="@color/text_primary"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Battery/Fuel: 45% • Active Route"
+                                    android:textColor="@color/status_in_progress"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 16. Assign Worker Screen -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_16"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Assign Worker Screen"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <!-- Upper Map View -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="6dp"
+                            app:cardBackgroundColor="#E0EFE0">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center"
+                                    android:text="📍 Interactive Dispatch Map\nUnassigned Complaints &amp; Workers"
+                                    android:textColor="@color/deep_forest_green"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- Lower drag-and-drop worker dispatch sheet -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Worker Dispatch Sheet"
+                                    android:textColor="@color/text_primary"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Drag &amp; Drop: Ramesh P. → Bin #104"
+                                    android:textColor="@color/deep_forest_green"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 17. Comprehensive Reports Screen -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_17"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Comprehensive Reports"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <!-- Dropdown filters -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:paddingHorizontal="6dp"
+                            android:text="Filter: Types of Waste"
+                            android:textColor="@color/text_primary"
+                            android:textSize="8sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:paddingHorizontal="6dp"
+                            android:text="Filter: Complaint Hotspots"
+                            android:textColor="@color/text_primary"
+                            android:textSize="8sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:paddingHorizontal="6dp"
+                            android:text="Filter: Fleet Efficiency"
+                            android:textColor="@color/text_primary"
+                            android:textSize="8sp" />
+
+                        <!-- CSV/PDF triggers -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.App.Button.Pill"
+                                android:layout_width="0dp"
+                                android:layout_height="34dp"
+                                android:layout_marginEnd="2dp"
+                                android:layout_weight="1"
+                                android:text="Export CSV"
+                                android:textSize="8sp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/Widget.App.Button.Pill"
+                                android:layout_width="0dp"
+                                android:layout_height="34dp"
+                                android:layout_marginStart="2dp"
+                                android:layout_weight="1"
+                                android:text="Export PDF"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- ================================================================================= -->
+        <!-- ROW 4: FIELD SANITATION WORKER APP (SCREENS 18 - 23) -->
+        <!-- ================================================================================= -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="ROW 4: FIELD SANITATION WORKER APP"
+            android:textColor="@color/deep_forest_green"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 18. Worker Main Task View -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_18"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Worker Main Task View"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Route optimization toggle: ON ⚡"
+                            android:textColor="@color/status_completed"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+
+                        <!-- Task Card -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pickup: Bin #104 Overflow"
+                                    android:textColor="@color/text_primary"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Location: Green Park Main Rd"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="8sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:orientation="horizontal">
+
+                                    <com.google.android.material.button.MaterialButton
+                                        style="@style/Widget.App.Button.Pill"
+                                        android:layout_width="0dp"
+                                        android:layout_height="32dp"
+                                        android:layout_marginEnd="2dp"
+                                        android:layout_weight="1"
+                                        android:text="Accept Task"
+                                        android:textSize="8sp" />
+
+                                    <com.google.android.material.button.MaterialButton
+                                        style="@style/Widget.Material3.Button.OutlinedButton"
+                                        android:layout_width="0dp"
+                                        android:layout_height="32dp"
+                                        android:layout_marginStart="2dp"
+                                        android:layout_weight="1"
+                                        android:text="Refuse Task"
+                                        android:textSize="8sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 19. Assigned Task Detail Screen -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_19"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Assigned Task Detail Screen"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <!-- Full address card -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Full Address:"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="8sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Plot 42, Market Road, Ward 14, City"
+                                    android:textColor="@color/text_primary"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <!-- Route preview -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="6dp"
+                            app:cardBackgroundColor="#E0EFE0">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center"
+                                    android:text="🗺️ Route Preview\n0.8 km distance"
+                                    android:textColor="@color/deep_forest_green"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/Widget.App.Button.Pill"
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="6dp"
+                            android:text="📞 Direct Caller Button"
+                            android:textSize="8sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Waste Tags: [Dry Waste] [Hazardous]"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="8sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Status Toggle: In Progress 🟢"
+                            android:textColor="@color/status_in_progress"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 20. Worker Task Completed (Proof of Work) -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_20"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Worker Task Completed"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <!-- Image upload gallery Before / After -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="2dp"
+                                android:layout_weight="1"
+                                android:background="@color/status_escalated_bg"
+                                android:gravity="center"
+                                android:text="Before Photo\n(Overflowing)"
+                                android:textColor="@color/status_escalated"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="2dp"
+                                android:layout_weight="1"
+                                android:background="@color/emerald_light"
+                                android:gravity="center"
+                                android:text="After Photo\n(Cleaned)"
+                                android:textColor="@color/status_completed"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <!-- Green badge Image Confirmation -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/emerald_light"
+                            android:padding="6dp"
+                            android:text="Image Confirmation ✅ Geotag Verified"
+                            android:textColor="@color/status_completed"
+                            android:textSize="8sp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/Widget.App.Button.Pill"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Tap to submit proof"
+                            android:textSize="9sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 21. Worker Profile & Performance -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_21"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Worker Profile &amp; Performance"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <!-- Performance Stats -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:cardBackgroundColor="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Completed tasks: 83/28"
+                                    android:textColor="@color/deep_forest_green"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="Average resolution time: 24 mins"
+                                    android:textColor="@color/text_primary"
+                                    android:textSize="9sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="Peer Ranking: 6"
+                                    android:textColor="@color/status_completed"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 22. Vehicle Checklist -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_22"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Vehicle Checklist"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pre-shift digital vehicle inspection"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="8sp" />
+
+                        <!-- Checkboxes -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Oil Level Checked"
+                                android:textColor="@color/text_primary"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tires Pressure Checked"
+                                android:textColor="@color/text_primary"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Brakes Condition Verified"
+                                android:textColor="@color/text_primary"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/Widget.App.Button.Pill"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Submit Pre-Shift Inspection"
+                            android:textSize="9sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 23. Waste Ratio Calculator -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_showcase_23"
+                    style="@style/Widget.App.Card"
+                    android:layout_width="220dp"
+                    android:layout_height="440dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/bg_slate_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_notch" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Waste Ratio Calculator"
+                            android:textColor="@color/deep_forest_green"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dry/Wet waste split calculator"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="8sp" />
+
+                        <!-- Total weight estimation -->
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/bg_input_field"
+                            android:hint="Total Weight Estimation (kg)"
+                            android:paddingHorizontal="8dp"
+                            android:text="450 kg"
+                            android:textSize="9sp" />
+
+                        <!-- Interactive slider tool -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Dry vs Wet Split Slider:"
+                            android:textColor="@color/text_primary"
+                            android:textSize="8sp" />
+
+                        <SeekBar
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:progress="60" />
+
+                        <!-- Automated split ratio calculation -->
+                        <com.google.android.material.card.MaterialCardView
+                            style="@style/Widget.App.Card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:cardBackgroundColor="@color/emerald_light">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Automated Split Ratio:"
+                                    android:textColor="@color/deep_forest_green"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="Dry Waste: 270 kg (60%)\nWet Waste: 180 kg (40%)"
+                                    android:textColor="@color/deep_forest_green"
+                                    android:textSize="9sp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>

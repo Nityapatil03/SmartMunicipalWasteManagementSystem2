@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_splash_to_login" type="id" />
+    <item name="card_showcase_1" type="id" />
+    <item name="card_showcase_2" type="id" />
+    <item name="card_showcase_3" type="id" />
+    <item name="card_showcase_4" type="id" />
+    <item name="card_showcase_5" type="id" />
+    <item name="card_showcase_6" type="id" />
+    <item name="card_showcase_7" type="id" />
+    <item name="card_showcase_8" type="id" />
+    <item name="card_showcase_9" type="id" />
+    <item name="card_showcase_10" type="id" />
+    <item name="card_showcase_11" type="id" />
+    <item name="card_showcase_12" type="id" />
+    <item name="card_showcase_13" type="id" />
+    <item name="card_showcase_14" type="id" />
+    <item name="card_showcase_15" type="id" />
+</resources>

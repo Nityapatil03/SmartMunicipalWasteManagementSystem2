@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Outer Green Border Circle -->
+    <path
+        android:fillColor="#1E5631"
+        android:pathData="M50,2 C23.49,2 2,23.49 2,50 C2,76.51 23.49,98 50,98 C76.51,98 98,76.51 98,50 C98,23.49 76.51,2 50,2 Z" />
+
+    <!-- Inner Soft Mint Background Circle -->
+    <path
+        android:fillColor="#E8F5E9"
+        android:pathData="M50,7 C26.25,7 7,26.25 7,50 C7,73.75 26.25,93 50,93 C73.75,93 93,73.75 93,50 C93,26.25 73.75,7 50,7 Z" />
+
+    <!-- Recycle Arrow 1 (Top Right) -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M44,20 L58,20 L58,13 L73,26 L58,39 L58,32 L46,32 C40.48,32 36,36.48 36,42 L36,46 L28,46 L28,42 C28,32.06 35.16,23.8 44,20 Z" />
+
+    <!-- Recycle Arrow 2 (Bottom) -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M73,46 L81,59.86 L75.8,62.86 C78.01,66.69 77.32,71.58 74,74.9 C70.68,78.22 65.79,78.91 61.96,76.7 L58.96,81.9 L45.1,74.1 L52.9,60.24 L58.1,63.24 C58.65,62.29 59,61.18 59,60 C59,56.13 55.87,53 52,53 L47,53 L47,43 L52,43 C61.21,43 69.08,49.24 71.6,57.8 Z" />
+
+    <!-- Recycle Arrow 3 (Top Left) -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M38,80 L22,80 L22,87 L7,75 L22,63 L22,70 L34,70 C39.52,70 44,65.52 44,60 L44,55 L52,55 L52,60 C52,71.05 44.84,80 38,80 Z" />
+
+    <!-- Smart Waste Bin Body -->
+    <path
+        android:fillColor="#1E5631"
+        android:pathData="M43,45 L57,45 L55,67 C55,68.1 54.1,69 53,69 L47,69 C45.9,69 45,68.1 45,67 Z" />
+
+    <!-- Bin Lid & Handle -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M41,41 L59,41 C59.55,41 60,41.45 60,42 L60,44 L40,44 L40,42 C40,41.45 40.45,41 41,41 Z" />
+    <path
+        android:fillColor="#1E5631"
+        android:pathData="M47,38 L53,38 C53.55,38 54,38.45 54,39 L54,41 L46,41 L46,39 C46,38.45 46.45,38 47,38 Z" />
+
+    <!-- Smart IoT Sensor Signal Arcs above Bin -->
+    <path
+        android:fillColor="#1E5631"
+        android:pathData="M45,34.5 C45,34.5 47,32 50,32 C53,32 55,34.5 55,34.5 L53.5,35.8 C53.5,35.8 52,33.8 50,33.8 C48,33.8 46.5,35.8 46.5,35.8 Z" />
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M42.5,31 C42.5,31 45.5,28 50,28 C54.5,28 57.5,31 57.5,31 L56,32.5 C56,32.5 53.5,29.8 50,29.8 C46.5,29.8 44,32.5 44,32.5 Z" />
+
+    <!-- Center Eco Leaf Accent on Bin -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M50,48 C50,48 54,52 54,56 C54,58.2 52.2,60 50,60 C47.8,60 46,58.2 46,56 C46,52 50,48 50,48 Z" />
+</vector>
