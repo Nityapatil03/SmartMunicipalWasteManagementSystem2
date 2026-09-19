@@ -27,11 +27,11 @@ public class LoginFragment extends Fragment {
             toggleRole.addOnButtonCheckedListener((group, checkedId, isChecked) -> {
                 if (isChecked) {
                     if (checkedId == R.id.btn_role_admin) {
-                        etEmail.setText("admin@smartwaste.gov");
+                        etEmail.setHint("e.g. admin@smartwaste.gov");
                     } else if (checkedId == R.id.btn_role_worker) {
-                        etEmail.setText("worker@smartwaste.gov");
+                        etEmail.setHint("e.g. worker@smartwaste.gov");
                     } else {
-                        etEmail.setText("citizen@smartwaste.gov");
+                        etEmail.setHint("e.g. citizen@smartwaste.gov");
                     }
                 }
             });
